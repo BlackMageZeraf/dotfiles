@@ -6,3 +6,6 @@
 [user]
 	name = Ali Hussain Abid
 	email = ali.hussain.abid.246@outlook.com
+	signingkey = A1E253B0EF00FAE3
+[commit]
+    gpgsign = true
