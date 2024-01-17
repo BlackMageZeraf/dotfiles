@@ -77,9 +77,9 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias ll='exa -alF --icons'
-alias la='exa -A --icons'
-alias l='exa -CF --icons'
+alias ll='eza -alF --icons'
+alias la='eza -A --icons'
+alias l='eza -CF --icons'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
