@@ -10,11 +10,15 @@ set -g theme_hide_hostname no
 set -g theme_hostname always
 
 # aliases
-alias ls "exa -F --icons"
+alias ls "eza -F --icons"
+alias l ls
 alias la "ls -a"
 alias ll "ls -l"
 alias lla "ll -a"
-alias g git
+alias gitac "git add . && git commit -m"
+alias grep rg
+alias upgradepc "sudo apt update && sudo apt upgrade -y && cargo-install-update install-update --all && flatpak update && sudo snap refresh"
+
 command -qv nvim && alias vim nvim
 command -qv batcat && alias cat batcat
 
@@ -26,10 +30,6 @@ set -gx PATH ~/.local/bin $PATH
 
 # NodeJS
 set -gx PATH node_modules/.bin $PATH
-
-# Go
-set -g GOPATH $HOME/go
-set -gx PATH $GOPATH/bin $PATH
 
 # NVM
 function __check_rvm --on-variable PWD --description 'Do nvm stuff'
@@ -55,6 +55,7 @@ if test -f $LOCAL_CONFIG
     source $LOCAL_CONFIG
 end
 
+# run following commands in terminal to set the theme
 # fish_config theme save "Catppuccin Frappe"
 # fish_config theme save "Catppuccin Latte"
 # fish_config theme save "Catppuccin Macchiato"
@@ -62,5 +63,5 @@ end
 
 source ~/.asdf/asdf.fish
 
-
+zoxide init fish | source
 starship init fish | source
