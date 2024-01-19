@@ -9,9 +9,9 @@ end
 -- Settings
 config.color_scheme = "Tokyo Night"
 config.font = wezterm.font_with_fallback({
+	{ family = "FiraCode Nerd Font" },
 	{ family = "CaskaydiaCove Nerd Font" },
-	{ family = "FiraCode Nerd Font", weight = "Medium" },
-	{ family = "Iosevka Nerd Font", weight = "Medium" },
+	{ family = "Iosevka Nerd Font" },
 })
 config.font_size = 16
 config.window_background_opacity = 0.90

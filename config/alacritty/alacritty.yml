@@ -41,7 +41,7 @@ font:
   bold_italic:
     family: CaskaydiaCove Nerd Font
     style: "Extrabold Italic"
-  size: 16.0
+  size: 13.5
   offset:
     x: 0
     y: 0
