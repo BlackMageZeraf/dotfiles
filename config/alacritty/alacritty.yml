@@ -30,17 +30,29 @@ spaces: true
 
 font:
   normal:
-    family: CaskaydiaCove Nerd Font
+    family: FiraCode Nerd Font
     style: Medium
   bold:
-    family: CaskaydiaCove Nerd Font
+    family: FiraCode Nerd Font
     style: Extrabold
   italic:
-    family: CaskaydiaCove Nerd Font
+    family: FiraCode Nerd Font
     style: Italic
   bold_italic:
-    family: CaskaydiaCove Nerd Font
+    family: FiraCode Nerd Font
     style: "Extrabold Italic"
+  #  normal:
+  #    family: CaskaydiaCove Nerd Font
+  #    style: Medium
+  #  bold:
+  #    family: CaskaydiaCove Nerd Font
+  #    style: Extrabold
+  #  italic:
+  #    family: CaskaydiaCove Nerd Font
+  #    style: Italic
+  #  bold_italic:
+  #    family: CaskaydiaCove Nerd Font
+  #    style: "Extrabold Italic"
   size: 13.5
   offset:
     x: 0
