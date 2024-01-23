@@ -13,7 +13,7 @@ config.font = wezterm.font_with_fallback({
 	{ family = "CaskaydiaCove Nerd Font" },
 	{ family = "Iosevka Nerd Font" },
 })
-config.font_size = 16
+config.font_size = 12
 config.window_background_opacity = 0.90
 config.window_decorations = "RESIZE"
 config.window_close_confirmation = "AlwaysPrompt"
