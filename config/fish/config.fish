@@ -18,6 +18,7 @@ alias lla "ll -a"
 alias gitac "git add . && git commit -m"
 alias grep rg
 alias upgradepc "sudo apt update && sudo apt upgrade -y && cargo-install-update install-update --all && flatpak update && sudo snap refresh"
+alias discord "flatpak run com.discordapp.Discord"
 
 command -qv nvim && alias vim nvim
 command -qv batcat && alias cat batcat
