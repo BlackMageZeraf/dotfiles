@@ -1,4 +1,4 @@
-indent_type = "Spaces"
+indent_type = "Tabs"
 indent_width = 4
 shift_width = 4
 tabstop = 4
