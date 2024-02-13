@@ -29,7 +29,7 @@ config.font = wezterm.font_with_fallback({
 -- Background Settings
 config.window_background_image = "D:\\Pictures\\Anime Grils\\ForVSCODE\\nier-automata-2b-desktop-wallpaper.jpg"
 config.window_background_image_hsb = {
-	-- Darken the background image by reducing it to 1/3rd
+	-- Darken the background image
 	brightness = 0.1,
 
 	-- You can adjust the hue by scaling its value.
@@ -41,11 +41,11 @@ config.window_background_image_hsb = {
 }
 
 config.font_size = 14
-config.window_background_opacity = 1
-config.text_background_opacity = 1
-config.window_decorations = "NONE"
+config.window_background_opacity = 1.0
+config.text_background_opacity = 0.9
+config.window_decorations = "RESIZE"
 config.window_close_confirmation = "AlwaysPrompt"
-config.scrollback_lines = 3000
+config.scrollback_lines = 10000
 config.default_workspace = "home"
 config.use_fancy_tab_bar = true
 
