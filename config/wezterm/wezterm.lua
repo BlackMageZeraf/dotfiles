@@ -1,7 +1,7 @@
 -- The only required line is this one.
 local wezterm = require("wezterm")
--- local mux = wezterm.mux
--- local act = wezterm.action
+local mux = wezterm.mux
+local act = wezterm.action
 -- Some empty tables for later use
 local config = {}
 local keys = {}
@@ -68,7 +68,7 @@ table.insert(launch_menu, {
 })
 
 wezterm.on("gui-startup", function(window)
-	-- local tab, pane, window = mux.spawn_window(cmd or {})
+	local window = mux.spawn_window(cmd or {})
 	local gui_window = window:gui_window()
 	gui_window:maximize()
 end)
