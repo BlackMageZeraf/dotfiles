@@ -67,10 +67,9 @@ table.insert(launch_menu, {
 	args = { "pwsh.exe", "-NoLogo" },
 })
 
-wezterm.on("gui-startup", function(window)
-	local window = mux.spawn_window(cmd or {})
-	local gui_window = window:gui_window()
-	gui_window:maximize()
+wezterm.on("gui-startup", function()
+	local tab, pane, window = mux.spawn_window({})
+	window:gui_window():maximize()
 end)
 
 config.launch_menu = launch_menu
