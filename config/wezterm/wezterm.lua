@@ -27,7 +27,7 @@ config.font = wezterm.font_with_fallback({
 })
 
 -- Background Settings
-config.window_background_image = "D:\\Pictures\\Anime Grils\\ForVSCODE\\nier-automata-2b-desktop-wallpaper.jpg"
+-- config.window_background_image = "D:\\Pictures\\Anime Grils\\ForVSCODE\\nier-automata-2b-desktop-wallpaper.jpg"
 config.window_background_image_hsb = {
 	-- Darken the background image
 	brightness = 0.1,
@@ -41,8 +41,8 @@ config.window_background_image_hsb = {
 }
 
 config.font_size = 14
-config.window_background_opacity = 1.0
-config.text_background_opacity = 0.9
+config.window_background_opacity = 0.8
+config.text_background_opacity = 1
 config.window_decorations = "RESIZE"
 config.window_close_confirmation = "AlwaysPrompt"
 config.scrollback_lines = 10000
