@@ -1,3 +1,4 @@
+-- Use CTRL+SHIFT+R to reload configurations
 -- The only required line is this one.
 local wezterm = require("wezterm")
 local mux = wezterm.mux
@@ -18,8 +19,8 @@ if wezterm.config_builder then
 end
 
 -- Settings
-config.color_scheme = "AdventureTime"
-
+-- Theme Names: cyberpunk, FirefoxDev, AdventureTime, GruvboxDark, GruvboxDarkHard, Hacktober, Hybrid, iceberg-dark, idea, Japanesque, Macintosh (base16), matrix, Matrix (terminal.sexy), Mikazuki (terminal.sexy), Monokai Remastered, Neon, Neon (terminal.sexy), Operator Mono Dark, Royal
+config.color_scheme = "GruvboxDarkHard"
 config.font = wezterm.font_with_fallback({
 	{ family = "CaskaydiaCove Nerd Font" },
 	{ family = "FiraCode Nerd Font" },
@@ -28,26 +29,28 @@ config.font = wezterm.font_with_fallback({
 
 -- Background Settings
 -- config.window_background_image = "D:\\Pictures\\Anime Grils\\ForVSCODE\\nier-automata-2b-desktop-wallpaper.jpg"
+-- config.window_background_image = "D:\\Pictures\\Wallpapers\\VDay-en.jpg"
 config.window_background_image_hsb = {
 	-- Darken the background image
-	brightness = 0.1,
+	brightness = 0.3,
 
 	-- You can adjust the hue by scaling its value.
 	-- a multiplier of 1.0 leaves the value unchanged.
 	hue = 1.0,
 
 	-- You can adjust the saturation also.
-	saturation = 0.0,
+	saturation = 1.0,
 }
 
 config.font_size = 14
-config.window_background_opacity = 0.8
-config.text_background_opacity = 1
+config.window_background_opacity = 0.95
+config.text_background_opacity = 1.0
 config.window_decorations = "RESIZE"
 config.window_close_confirmation = "AlwaysPrompt"
 config.scrollback_lines = 10000
 config.default_workspace = "home"
-config.use_fancy_tab_bar = true
+config.use_fancy_tab_bar = false
+config.tab_bar_at_bottom = true
 
 -- Key Settings
 config.leader = { key = "a", mods = "CTRL", timeout_miliseconds = 1000 }
